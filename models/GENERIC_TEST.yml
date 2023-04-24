@@ -1,0 +1,37 @@
+version: 2
+
+models:
+  - name: SINGULAR_TEST1
+    columns: 
+          - name: ORDER_KEY
+            tests:
+              - unique
+              - not_null
+
+  
+  
+  - name : ORDER_DETAILS
+    columns:
+          - name: ORDER_KEY
+            tests:
+              - unique
+              - not_null
+          - name: STATUS
+            tests:
+              - accepted_values:
+                  values:
+                    - 'Completed'
+                    - 'Incomplete'
+                    - 'Inprogress'
+                    - 'shipped'
+       
+                  
+  - name: source1
+    columns: 
+          - name: ID
+            tests:
+              - relationships:
+                  field: ID
+                  to: ref('USER1')
+
+       

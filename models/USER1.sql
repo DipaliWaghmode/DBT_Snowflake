@@ -1,0 +1,1 @@
+select max(DBT_UPDATED_AT) from  {{source('PC_DBT_DB', 'USER_DEMO')}}

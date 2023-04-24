@@ -1,0 +1,23 @@
+version: 2
+
+sources:
+  - name: PC_DBT_DB
+    database: PC_DBT_DB
+    schema: RAW
+
+
+    tables:
+      - name: ORDER_DETAILS
+      - name: ACCOUNT
+      - name: USER
+      - name: USER_DEMO
+      
+        
+    
+    
+    
+        
+  
+      
+
+      
