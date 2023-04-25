@@ -13,6 +13,15 @@ sources:
             tests:
               - unique
               - not_null
+          - name: STATUS
+            tests:
+              - accepted_values:
+                  values:
+                    - 'Completed'
+                    - 'Incomplete'
+                    - 'Inprogress'
+                    - 'shipped'
+       
 
       - name: ACCOUNT
         columns:
@@ -43,6 +52,12 @@ sources:
             tests:
               - unique
               - not_null
+          
+          - name: OWNER_ID
+            tests:
+              - relationships:
+                  field: USER_ID
+                  to: ref('USER')
         
     
     
