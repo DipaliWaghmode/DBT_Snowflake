@@ -3,7 +3,7 @@ with source as(
 ),
 TOTAL_ORDER as (
 select
-    ORDER_KEY,
+    ORDER_ID,
     sum(AMOUNT) as TOTAL_AMOUNT
 from source
 group by ORDER_KEY

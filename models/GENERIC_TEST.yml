@@ -3,7 +3,7 @@ version: 2
 models:
   - name: SINGULAR_TEST1
     columns: 
-          - name: ORDER_KEY
+          - name: ORDER_KE
             tests:
               - unique
               - not_null
