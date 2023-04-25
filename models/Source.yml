@@ -11,7 +11,14 @@ sources:
       - name: ACCOUNT
       - name: USER
       - name: USER_DEMO
+      - name: DIM_DATE
       
+  - name: PC_MATILLION_DB
+    database: PC_MATILLION_DB
+    schema: RAW
+
+    tables:
+        - name: TARGET_ORDER
         
     
     
