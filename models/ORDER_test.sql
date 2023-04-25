@@ -1,6 +1,5 @@
 with source as(
-        select * from {{source('PC_MATILLION_DB','Fact_Order')}}
-
+        select * from {{source('PC_DBT_DB','ORDER_DETAILS')}}
 ) ,
 ORDERS1 as
 (
