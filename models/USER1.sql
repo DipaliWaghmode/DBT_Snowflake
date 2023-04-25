@@ -1,1 +1,1 @@
-select * from  {{source('PC_DBT_DB', 'USER_DEMO')}}
+select * from  {{source('PC_DBT_DB', 'USER')}}
