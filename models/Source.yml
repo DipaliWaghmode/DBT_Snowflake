@@ -8,8 +8,27 @@ sources:
 
     tables:
       - name: ORDER_DETAILS
+        columns:
+          - name: ORDER_KEY
+            tests:
+              - unique
+              - not_null
+
       - name: ACCOUNT
+        columns:
+          - name: ACCOUNT_KEY
+            tests:
+              - unique
+              - not_null
+
       - name: USER
+        columns:
+          - name: USER_KEY
+            tests:
+              - unique
+              - not_null
+              
+
       - name: USER_DEMO
       - name: DIM_DATE
       
@@ -19,6 +38,11 @@ sources:
 
     tables:
         - name: TARGET_ORDER
+          columns:
+          - name: ID
+            tests:
+              - unique
+              - not_null
         
     
     
