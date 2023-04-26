@@ -7,7 +7,6 @@ sources:
 
    
 
-
     tables:
       - name: ORDER_DETAILS
         columns:
