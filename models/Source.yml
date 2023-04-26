@@ -5,6 +5,8 @@ sources:
     database: PC_DBT_DB
     schema: RAW
 
+   
+
 
     tables:
       - name: ORDER_DETAILS
