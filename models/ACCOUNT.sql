@@ -3,7 +3,7 @@ with ACCOUNT_DATA as(
 
 ),
 staged_data as(
-    select 
+select 
     ACCOUNT_KEY,
     ID ,
     NAME,
