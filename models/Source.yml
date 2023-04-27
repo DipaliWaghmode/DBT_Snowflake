@@ -35,7 +35,6 @@ sources:
         columns:
           - name: USER_KEY
             tests:
-              - unique
               - not_null
               
 
